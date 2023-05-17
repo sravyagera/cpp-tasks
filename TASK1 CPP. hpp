@@ -8,7 +8,7 @@ class Car{
         std::string customer;
         int speed;
     public:
-        Car(int a,const std::string& maker);
+        Car(int a,const std::string& maker,int sp);
         
         int r() const;
         std::string c() const;

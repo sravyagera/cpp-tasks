@@ -1,6 +1,6 @@
 #include "Car.hpp"
 #include <iostrem>
-Car::Car(int year,const std::string& maker,int sp):release(year),customer(maker),sp(speed){}
+Car::Car(int a,const std::string& maker,int sp):release(a),customer(maker),sp(speed){}
 
     int Car::r() const {
         return release;

@@ -1,0 +1,20 @@
+#ifdef CAR_HPP
+#define CAR_HPP
+#include <string>
+using namespace std;
+class Car{
+    private:
+        int release;
+        std::string customer;
+        int speed;
+    public:
+        Car(int a,const std::string& maker);
+        
+        int r() const;
+        std::string c() const;
+        int s() const;
+        
+        void acc();
+        void brake();
+        };
+#endif       

@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Car{
+    private:
+        int release;
+        string customer;
+        int speed;
+    public:
+        Car(int a,const string& b,int c)
+        {
+            release=a;
+            customer=b;
+            speed=c;
+        }
+    int r{
+        cout<<"release: "<<release;
+        return release;
+        }
+    int c{
+        cout<<"customer: "<<customer;
+        return customer;
+    }
+    int s{
+        cout<<"speed: "<<speed;
+        return speed
+    }
+    
+    void acc{
+        speed=speed+10;
+    }
+    void brake{
+        brake=brake-10;
+    }
+};
+
+int main()
+{
+    Car car(1,"a",2);
+    for(int i=0;i<5;i++)
+    {    1,
+        cout<<"speed after acc: "<<car.speed();
+    }
+    for(int i=0;i<5;i++){
+        cout<<"speed after brake: "<<car.speed();
+    }
+
+    return 0;
+}

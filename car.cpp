@@ -1,6 +1,10 @@
 #include "Car.hpp"
 #include <iostrem>
-Car::Car(int a,const std::string& maker,int sp):release(a),customer(maker),speed(sp){}
+Car::Car(int a,const std::string& maker,int sp){
+    release=a;
+    customer=maker;
+    speed=sp;
+}
 
     int Car::r() const {
         return release;
@@ -23,7 +27,7 @@ Car::Car(int a,const std::string& maker,int sp):release(a),customer(maker),speed
 
 int main()
 {
-    Car car(1,"a");
+    Car car(1,"a",0);
     for(int i=0;i<5;i++)
     {   car.acc();
     }

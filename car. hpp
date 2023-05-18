@@ -3,18 +3,27 @@
 #include <string>
 using namespace std;
 class Car{
-    private:
-        int release;
-        std::string customer;
-        int speed;
     public:
-        Car(int a,const std::string& maker,int sp);
+        int release;
+        string customer;
+        int speed;
+        int r()  {
+        return release;
+        }
+        std::string c(){
+            return customer;
+        }
+        int s(){
+            return speed;
+        }
         
-        int r() const;
-        std::string c() const;
-        int s() const;
-        
-        void acc();
-        void brake();
-        };
-#endif       
+        void acc()
+        {
+            speed=speed+10;
+        }
+        void brake()
+        {
+            speed=speed-10;
+        }
+};
+#endif

@@ -3,7 +3,7 @@
 int main()
 { 
     Car car;
-    car.release=1;
+    car.release=2000;
     car.customer='Audi';
     car.speed=100;
     for(int i=0;i<5;i++)

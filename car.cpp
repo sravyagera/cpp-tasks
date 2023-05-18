@@ -27,12 +27,10 @@ int main()
     for(int i=0;i<5;i++)
     {   car.acc();
     }
-  int speed1=car.speed();
-    std::cout<<"speed after acc: "<<car.speed1();
+    std::cout<<"speed after acc: "<<car.speed();
     for(int i=0;i<5;i++){
-        cout<<"speed after brake: "<<car.speed();
+            car.brake();
     }
-  int speed1=car.speed1();
-
+    cout<<"speed after brake: "<<car.speed();
     return 0;
 }

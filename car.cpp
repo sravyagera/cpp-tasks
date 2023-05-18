@@ -9,7 +9,7 @@ Car::Car(int a,const std::string& maker,int sp){
     int Car::r() const {
         return release;
         }
-    int Car::c() const{
+    std::string Car::c() const{
         return customer;
     }
     int Car::s() const{
@@ -35,6 +35,6 @@ int main()
     for(int i=0;i<5;i++){
             car.brake();
     }
-    cout<<"speed after brake: "<<car.speed();
+    std::cout<<"speed after brake: "<<car.speed();
     return 0;
 }

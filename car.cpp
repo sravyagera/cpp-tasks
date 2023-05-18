@@ -1,10 +1,6 @@
 #include "car.hpp"
 #include <iostream>
-Car::Car(int a,const std::string& maker,int sp){
-    release=a;
-    customer=maker;
-    speed=sp;
-}
+Car::Car(int a,const std::string& maker,int sp):release(a),customer(maker),speed(sp){}
 
     int Car::r() const {
         return release;
@@ -16,13 +12,15 @@ Car::Car(int a,const std::string& maker,int sp){
         return speed;
     }
     
-    void acc{
+    void Car::acc
+    {
         speed=speed+10;
     }
-    void brake{
-        brake=brake-10;
+    void Car::brake
+    {
+        speed=speed-10;
     }
-}
+
 
 
 int main()
@@ -31,10 +29,10 @@ int main()
     for(int i=0;i<5;i++)
     {   car.acc();
     }
-    std::cout<<"speed after acc: "<<car.speed();
+    std::cout<<"speed after acc: "<<car.s()<<"km/h"<<std::endl;
     for(int i=0;i<5;i++){
             car.brake();
     }
-    std::cout<<"speed after brake: "<<car.speed();
+    std::cout<<"speed after brake: "<<car.s()<<"km/h"<<std::endl;
     return 0;
 }

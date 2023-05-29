@@ -2,10 +2,7 @@
 #include <iostream>
 int main()
 { 
-    Car car;
-    car.release=2000;
-    car.customer='Audi';
-    car.speed=100;
+    Car car(2021, "Audi");
     for(int i=0;i<5;i++)
     {   car.acc();
     }

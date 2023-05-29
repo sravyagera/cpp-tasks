@@ -8,8 +8,14 @@ class Car{
         string customer;
         int speed;
         Car() {
-        ReleaseYear = 0;
+        release = 0;
         customer = "";
+        speed = 0;
+        std::cout << "Constructor is called!" << std::endl;
+        }
+        Car(int year, string maker) {
+        release = year;
+        customer = maker;
         speed = 0;
         std::cout << "Constructor is called!" << std::endl;
         }
@@ -35,4 +41,5 @@ class Car{
             speed=speed-10;
         }
 };
+
 #endif

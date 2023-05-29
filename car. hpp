@@ -7,20 +7,14 @@ class Car{
         int release;
         string customer;
         int speed;
-        Car() {
-        release = 0;
-        customer = "";
-        speed = 0;
-        std::cout << "Constructor is called!" << std::endl;
-        }
         Car(int year, string maker) {
         release = year;
         customer = maker;
         speed = 0;
-        std::cout << "Constructor is called!" << std::endl;
+        cout << "Constructor is called" <<endl;
         }
         ~Car() {
-        std::cout << "Destructor is called!" << std::endl;
+        cout << "Destructor is called" <<endl;
         }
         int r()  {
         return release;
